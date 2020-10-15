@@ -1,0 +1,10 @@
+{% extends 'index.html' %}
+
+{% block content %}
+    <h1>About us</h1>
+    <p>{{my_text}}</p>
+    <p>{{address}}</p>
+    {% for el in range %}
+        <li>{{el}}</li>
+    {% endfor %}
+{% endblock %} 
