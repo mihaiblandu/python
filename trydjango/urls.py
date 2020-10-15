@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls.static import static
+from django.conf import settings
 from pages.views import social_view, contact_view, about_view, service_view
 from products.views import product_detail_view , product_view , product_list , product_create_view
 urlpatterns = [
@@ -27,4 +29,4 @@ urlpatterns = [
     path("products", product_view),
     path("allproducts", product_list),
     path('create/', product_create_view),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
