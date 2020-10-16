@@ -78,14 +78,14 @@ WSGI_APPLICATION = 'trydjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME':'d8kusqkeo9lhu6',
-#        'HOST':'ec2-34-231-56-78.compute-1.amazonaws.com',
-#        'PORT':'5432',
-#        'USER':'vwbtmrfbdhajpa',
-#        'PASSWORD':'a32187a38d56b1872b79895552e323974f2628a73dd824663f6b20e9aa74fd64',
+#        'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'d8kusqkeo9lhu6',
+        'HOST':'ec2-34-231-56-78.compute-1.amazonaws.com',
+        'PORT':'5432',
+        'USER':'vwbtmrfbdhajpa',
+        'PASSWORD':'a32187a38d56b1872b79895552e323974f2628a73dd824663f6b20e9aa74fd64',
     }
 }
 
