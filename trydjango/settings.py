@@ -26,7 +26,7 @@ SECRET_KEY = '!3w!e=su6x&gm3(k_vw0o4*72$6#=jaqw_iq@w8#5zzm=ra$o5'
 DEBUG = True
 
 ALLOWED_HOSTS = ['0.0.0.0','shrouded-beach-83402.herokuapp.com',
-                 '127.0.0.1']
+                 '127.0.0.1','localhost']
 
 
 # Application definition

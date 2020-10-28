@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div >
+<form action='update' method='POST'>{% csrf_token %}
+    <h2>Update</h2>
+    {{ form.as_p }}
+    <input type='submit' value='Save' />
+    <a type='button' href='.'>Cancel</a>
+</form>
+
+</div>
+{% endblock %}

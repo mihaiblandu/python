@@ -1,6 +1,12 @@
 {% extends 'index.html' %}
 
 {% block content %}
-    <h1>{{title}}</h1>
-    <p>{{description}}</p>
+    <h1>{{obj.title}}</h1>
+    <p>{{obj.description}}</p>
+    <p>{{obj.price}}</p>
+    <div >
+        <a href="./update">Update</a>
+        <a href="./delete">Delete</a>
+
+    </div>
 {% endblock %}
